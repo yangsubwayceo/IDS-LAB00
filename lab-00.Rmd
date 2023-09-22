@@ -17,15 +17,15 @@ We set up the data frame. Edit the data below to include information about your 
 
 ```{r setup-tibble}
 team_data <- tibble(
-  name = c("Peter Rabbit", "member 1", "member 2", 
-           "member 3", "member 4"),
-  github_username = c("mcgregors-garden", "username 1", "username 2", 
-                      "username 3", "username 4"), 
-  colour = c("powderblue", "colour 1", "colour 2", 
-             "colour 3", "colour 4"),
-  hobby = c("Hopping", "hobby 1", "hobby 2", 
-            "hobby 3", "hobby 4"),
-  favourite_number = c(2, NA, NA, NA, NA)
+  name = c("Lim Zhen Yang", "Yuchun Zhu", "Mingshi Yue", 
+           "Kevin Jiang", "Guo Yifan"),
+  github_username = c("yangsubwayceo", "messi15", "EthanYue123", 
+                      "jky040223", "Alen0504"), 
+  colour = c("gray", "blue", "yellow", 
+             "yellow", "green"),
+  hobby = c("listening to music", "football", "woman", 
+            "basketball", "playing chess"),
+  favourite_number = c(7, 10, 6, 4, 3)
   )
 
 team_data
@@ -47,19 +47,19 @@ p1
 ```
 
 
-*Remove this text (including the stars), and add your answer for Exercise 18 here.*
+The plot shows each team members' favourite number.
 
 ### Exercises 19
 
 Change the text of the plot title and axis labels.
 
 ```{r labelled-bar-plot}
-p1 + labs(x = "Insert text here", 
-          y = "Insert text here",
-          title = "Insert text here")
+p1 + labs(x = "username", 
+          y = "number",
+          title = "Favourite Number of Team Members")
 ```
 
-*Remove this text (including the stars), and add your answer for Exercise 19 here.*
+labs() is a function to change plot labels for new labels. It allows the user to add titles as well.
 
 ### Exercise 20
 
@@ -69,4 +69,5 @@ p2 <- ggplot(team_data, aes(x = hobby)) +
 p2
 ```
 
-*Remove this text (including the stars) and add your answer for Exercise 20 here.*
+The bar plot is not a good data visualisation because it requires multiple members to have the same hobby. In a diverse array of students, the probability of students sharing the same hobby increases, however number of students with unique hobbies increases as well, leading to a bar plot with a lot of "1-height bars". 
+An efficient way of visualising information would be to group students' hobbies under similar hobby groups such as 'sports','entertainment', 'arts', 'culinary' etc. and then make a bar plot of the frequency of students' hobby groups.
