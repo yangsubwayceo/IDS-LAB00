@@ -69,5 +69,8 @@ p2 <- ggplot(team_data, aes(x = hobby)) +
 p2
 ```
 
-The bar plot is not a good data visualisation because it requires multiple members to have the same hobby. In a diverse array of students, the probability of students sharing the same hobby increases, however number of students with unique hobbies increases as well, leading to a bar plot with a lot of "1-height bars". 
-An efficient way of visualising information would be to group students' hobbies under similar hobby groups such as 'sports','entertainment', 'arts', 'culinary' etc. and then make a bar plot of the frequency of students' hobby groups.
+The bar plot is not a good data visualisation because it requires multiple members to have the same hobby. 
+In a diverse array of students, the probability of students sharing the same hobby increases, 
+however number of students with unique hobbies increases as well, leading to a bar plot with a lot of "1-height bars". 
+An efficient way of visualising information would be to group students' hobbies under similar hobby groups such as 'sports',
+'entertainment', 'arts', 'culinary' etc. and then make a bar plot of the frequency of students' hobby groups.
